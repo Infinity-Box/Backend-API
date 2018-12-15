@@ -1,0 +1,77 @@
+{
+  "name": "frog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "skin": {
+      "type": "boolean",
+      "required": true
+    },
+    "skeleton": {
+      "type": "boolean",
+      "required": true
+    },
+    "muscles": {
+      "type": "boolean",
+      "required": true
+    },
+    "liver": {
+      "type": "boolean",
+      "required": true
+    },
+    "heart": {
+      "type": "boolean",
+      "required": true
+    },
+    "lungs": {
+      "type": "boolean",
+      "required": true
+    },
+    "stomach": {
+      "type": "boolean",
+      "required": true
+    },
+    "gall-bladder": {
+      "type": "boolean",
+      "required": true
+    },
+    "intestines": {
+      "type": "boolean",
+      "required": true
+    },
+    "head": {
+      "type": "boolean",
+      "required": true
+    },
+    "mouth": {
+      "type": "boolean",
+      "required": true
+    },
+    "legs": {
+      "type": "boolean",
+      "required": true
+    },
+    "feet": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}
